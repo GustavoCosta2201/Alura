@@ -1,0 +1,17 @@
+C:\3- Estudos\Alura\Curso de C#\C# Web crie aplicações usando ASP.NET\.NET - Criando uma API Web com ASP.NET Core\ScreenSound.Shared.Dados\obj\Debug\net6.0\ScreenSound.Shared.Dados.csproj.AssemblyReference.cache
+C:\3- Estudos\Alura\Curso de C#\C# Web crie aplicações usando ASP.NET\.NET - Criando uma API Web com ASP.NET Core\ScreenSound.Shared.Dados\obj\Debug\net6.0\ScreenSound.Shared.Dados.GeneratedMSBuildEditorConfig.editorconfig
+C:\3- Estudos\Alura\Curso de C#\C# Web crie aplicações usando ASP.NET\.NET - Criando uma API Web com ASP.NET Core\ScreenSound.Shared.Dados\obj\Debug\net6.0\ScreenSound.Shared.Dados.AssemblyInfoInputs.cache
+C:\3- Estudos\Alura\Curso de C#\C# Web crie aplicações usando ASP.NET\.NET - Criando uma API Web com ASP.NET Core\ScreenSound.Shared.Dados\obj\Debug\net6.0\ScreenSound.Shared.Dados.AssemblyInfo.cs
+C:\3- Estudos\Alura\Curso de C#\C# Web crie aplicações usando ASP.NET\.NET - Criando uma API Web com ASP.NET Core\ScreenSound.Shared.Dados\obj\Debug\net6.0\ScreenSound.Shared.Dados.csproj.CoreCompileInputs.cache
+C:\3- Estudos\Alura\Curso de C#\C# Web crie aplicações usando ASP.NET\.NET - Criando uma API Web com ASP.NET Core\ScreenSound.Shared.Dados\bin\Debug\net6.0\ScreenSound.Shared.Dados.deps.json
+C:\3- Estudos\Alura\Curso de C#\C# Web crie aplicações usando ASP.NET\.NET - Criando uma API Web com ASP.NET Core\ScreenSound.Shared.Dados\bin\Debug\net6.0\ScreenSound.Shared.Dados.runtimeconfig.json
+C:\3- Estudos\Alura\Curso de C#\C# Web crie aplicações usando ASP.NET\.NET - Criando uma API Web com ASP.NET Core\ScreenSound.Shared.Dados\bin\Debug\net6.0\ScreenSound.Shared.Dados.dll
+C:\3- Estudos\Alura\Curso de C#\C# Web crie aplicações usando ASP.NET\.NET - Criando uma API Web com ASP.NET Core\ScreenSound.Shared.Dados\bin\Debug\net6.0\ScreenSound.Shared.Dados.pdb
+C:\3- Estudos\Alura\Curso de C#\C# Web crie aplicações usando ASP.NET\.NET - Criando uma API Web com ASP.NET Core\ScreenSound.Shared.Dados\bin\Debug\net6.0\ScreenSound.Shared.Modelos.dll
+C:\3- Estudos\Alura\Curso de C#\C# Web crie aplicações usando ASP.NET\.NET - Criando uma API Web com ASP.NET Core\ScreenSound.Shared.Dados\bin\Debug\net6.0\ScreenSound.Shared.Modelos.pdb
+C:\3- Estudos\Alura\Curso de C#\C# Web crie aplicações usando ASP.NET\.NET - Criando uma API Web com ASP.NET Core\ScreenSound.Shared.Dados\obj\Debug\net6.0\ScreenSound.Shared.Dados.csproj.CopyComplete
+C:\3- Estudos\Alura\Curso de C#\C# Web crie aplicações usando ASP.NET\.NET - Criando uma API Web com ASP.NET Core\ScreenSound.Shared.Dados\obj\Debug\net6.0\ScreenSound.Shared.Dados.dll
+C:\3- Estudos\Alura\Curso de C#\C# Web crie aplicações usando ASP.NET\.NET - Criando uma API Web com ASP.NET Core\ScreenSound.Shared.Dados\obj\Debug\net6.0\refint\ScreenSound.Shared.Dados.dll
+C:\3- Estudos\Alura\Curso de C#\C# Web crie aplicações usando ASP.NET\.NET - Criando uma API Web com ASP.NET Core\ScreenSound.Shared.Dados\obj\Debug\net6.0\ScreenSound.Shared.Dados.pdb
+C:\3- Estudos\Alura\Curso de C#\C# Web crie aplicações usando ASP.NET\.NET - Criando uma API Web com ASP.NET Core\ScreenSound.Shared.Dados\obj\Debug\net6.0\ScreenSound.Shared.Dados.genruntimeconfig.cache
+C:\3- Estudos\Alura\Curso de C#\C# Web crie aplicações usando ASP.NET\.NET - Criando uma API Web com ASP.NET Core\ScreenSound.Shared.Dados\obj\Debug\net6.0\ref\ScreenSound.Shared.Dados.dll
