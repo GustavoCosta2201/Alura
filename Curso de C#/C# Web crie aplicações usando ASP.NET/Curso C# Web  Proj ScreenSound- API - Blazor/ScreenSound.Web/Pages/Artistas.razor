@@ -1,20 +1,48 @@
 ﻿@page "/Artistas"
-@inject ArtistaAPI artistaAPI
-<h3>Artistas</h3>
-@if(artistas is not null)
-{
-    foreach (var artista in artistas)
-    {
-        <p>@artista.Nome</p>
-    }
-}
+@inject ArtistasAPI artistasAPI
 
+<MudStack Class="mt-4 mb-4" Row="true" Justify="Justify.SpaceBetween">
+    <MudText Class="mb-4" Typo="Typo.h4">Artistas Cadastrados</MudText>
+    <MudPagination Count="@TotalPaginas" SelectedChanged="PaginaMudou">
+ </MudPagination>
+</MudStack>
+
+@if (ArtistasPorPagina is not null)
+{
+    <MudGrid>
+        @foreach (var artista in ArtistasPorPagina)
+        {
+            <MudItem xs="3">
+                <CardArtista Artista="artista" />
+            </MudItem>
+        }
+    </MudGrid>
+}
 
 @code {
     private ICollection<ArtistaResponse>? artistas;
+    private int Tamanho = 8;
+    private int TotalItens;
+    private int TotalPaginas;
+    private ICollection<ArtistaResponse>? ArtistasPorPagina;
+
+
 
     protected override async Task OnInitializedAsync()
     {
-        artistas = await artistaAPI.GetArtistasAsync();
+        artistas = await artistasAPI.GetArtistasAsync();
+
+        if (artistas is not null)
+        {
+            artistas = artistas.OrderByDescending(a => a.Id).ToList();
+            TotalItens = artistas.Count();
+            TotalPaginas = Convert.ToInt32(Math.Ceiling((TotalItens * 1.0) / Tamanho));
+            this.PaginaMudou(1);
+        }
+    }
+    private void PaginaMudou(int pageNumber)
+    {
+        var indice = pageNumber - 1;
+        ArtistasPorPagina = artistas!.Skip(Tamanho * indice).Take(Tamanho).ToList();
     }
 }
