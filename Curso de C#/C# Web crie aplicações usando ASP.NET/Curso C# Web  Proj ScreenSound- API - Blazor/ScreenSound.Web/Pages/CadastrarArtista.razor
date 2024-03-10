@@ -1,7 +1,6 @@
 ﻿@page "/CadastrarArtista"
-@inject ArtistasAPI artistaAPI
+@inject ArtistasAPI artistasAPI
 @inject NavigationManager navigationManager
-
 <MudPaper Class="px-8 pt-2 pb-4 mx-12 my-8" Justify="Justify.Center">
 
     <MudText Class="mt-8" Typo="Typo.h4">Cadastro do Artista</MudText>
@@ -21,6 +20,19 @@
                       Required="true"
                       RequiredError="Campo obrigatório." />
 
+        <MudImage Class="mt-4" src="@fileImage" />
+        <MudFileUpload T="IBrowserFile" Accept=".jpeg" FilesChanged="UploadFile">
+            <ButtonTemplate>
+                <MudButton HtmlTag="label"
+                           Variant="Variant.Filled"
+                           Color="Color.Primary"
+                           StartIcon="@Icons.Material.Filled.PhotoCamera"
+                           for="@context">
+                    Foto de Perfil
+                </MudButton>
+            </ButtonTemplate>
+        </MudFileUpload>
+
         <div class="d-flex align-center justify-space-between mt-4">
             <MudButton Variant="Variant.Filled"
                        @onclick="Cadastrar"
@@ -28,36 +40,36 @@
                        Class="ml-auto">
                 Cadastrar
             </MudButton>
-
-           
-            <MudButton Variant="Variant.Filled"
-                       @onclick="Voltar"
-                       Color="Color.Secondary"
-                       Class="ml-auto">
-
-                    Voltar
-            </MudButton>
-
         </div>
 
     </MudForm>
 </MudPaper>
 
 @code {
-
     private string? nome;
     private string? biografia;
 
+    private string? fileImage;
+    private string? fotoPerfil;
+
     private async Task Cadastrar()
     {
-        var request = new ArtistaRequest(nome!, biografia!);
-        await artistaAPI.AddArtistaAsync(request);
+        var request = new ArtistaRequest(nome!, biografia!, fotoPerfil);
+        await artistasAPI.AddArtistaAsync(request);
         navigationManager.NavigateTo("/Artistas");
     }
-
-    private void Voltar()
+    private async Task UploadFile(IBrowserFile file)
     {
-        navigationManager.NavigateTo("/Artistas");
-    }
+        long maxFileSize = 1024 * 1024 * 15;
+        var format = "image/jpeg";
+        var resizedImage = await file.RequestImageFileAsync(format, 200, 200);
 
-}
+        using var fileStream = resizedImage.OpenReadStream();
+        using var memoryStream = new MemoryStream();
+        await fileStream.CopyToAsync(memoryStream);
+
+        var imageUpload = Convert.ToBase64String(memoryStream.ToArray());
+        fileImage = $"data:{format};base64,{imageUpload}";
+        fotoPerfil = imageUpload;
+    }
+ }
