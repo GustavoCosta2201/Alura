@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ScreenSound.Shared.Dados
-build_property.ProjectDir = C:\3- Estudos\Alura\Curso de C#\C# Web crie aplicações usando ASP.NET\.NET - Criando uma API Web com ASP.NET Core\ScreenSound.Shared.Dados\
+build_property.ProjectDir = C:\3- Estudos\Alura\Curso de C#\C# Web crie aplicações usando ASP.NET\Secundário\.NET - Criando uma API Web com ASP.NET Core\ScreenSound.Shared.Dados\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
